@@ -1,124 +1,13 @@
 <!doctype html>
-<html lang="pt-BR">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta name="theme-color" content="#081329" />
-    <title>As Aventuras de Nena e Pepê | HRCLN-GAMES</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <a class="brand" href="./"
-        ><span class="logo">H</span
-        ><span
-          >HRCLN<span class="gold">-GAMES</span
-          ><small>JOGUE • EXPLORE • DESCUBRA</small></span
-        ></a
-      ><span class="pill">JOGO DE LABIRINTO · 5 FASES</span>
-    </header>
-    <main>
-      <section class="intro">
-        <div>
-          <p class="eyebrow">UMA AVENTURA ORIGINAL HRCLN DEV</p>
-          <h1>As Aventuras de<br /><span>Nena &amp; Pepê</span></h1>
-          <p>
-            Entre nos labirintos mágicos, recolha todas as estrelas, fuja dos
-            guardiões e desbloqueie cinco mundos fantásticos!
-          </p>
-          <div class="buttons">
-            <button id="playBtn">▶ JOGAR AGORA</button
-            ><button class="secondary" id="howBtn">Como jogar?</button>
-          </div>
-          <p class="hint" id="hint">
-            Setas ou WASD para mover · P para pausar · No celular use os
-            controles na tela.
-          </p>
-        </div>
-        <div class="art">
-          <div class="planet"></div>
-          <div class="hill h1"></div>
-          <div class="hill h2"></div>
-          <div class="char girl"><span>☺</span></div>
-          <div class="char boy"><span>☺</span></div>
-          <div class="puppy">🐶</div>
-          <div class="star st1">★</div>
-          <div class="star st2">★</div>
-        </div>
-      </section>
-      <section class="game-area" id="gameArea">
-        <div class="hud">
-          <div>🌟 PONTOS <b id="score">0</b></div>
-          <div>❤️ VIDAS <b id="lives">3</b></div>
-          <div>🗺️ FASE <b id="level">1/5</b></div>
-          <div>✨ RESTAM <b id="remaining">0</b></div>
-          <button id="soundBtn">🔊 Som</button>
-        </div>
-        <div id="game"></div>
-        <div class="touch">
-          <button data-dir="left">◀</button>
-          <div>
-            <button data-dir="up">▲</button>
-            <div><button data-dir="down">▼</button></div>
-          </div>
-          <button data-dir="right">▶</button>
-        </div>
-        <div class="under">
-          <div>
-            <h2 id="levelName">01 · Bosque Encantado</h2>
-            <p id="message">Colete todas as estrelas e encontre a saída!</p>
-          </div>
-          <button id="restartBtn">↻ Reiniciar fase</button>
-        </div>
-      </section>
-      <section class="worlds">
-        <p class="eyebrow">SUA JORNADA</p>
-        <h2>Cinco mundos para explorar</h2>
-        <div class="world-grid">
-          <article>
-            <b>01</b><span>🌳</span>
-            <h3>Bosque Encantado</h3>
-            <p>Estrelas e trilhas verdes.</p>
-          </article>
-          <article>
-            <b>02</b><span>☁️</span>
-            <h3>Vila das Nuvens</h3>
-            <p>Labirintos nas alturas.</p>
-          </article>
-          <article>
-            <b>03</b><span>💎</span>
-            <h3>Cavernas de Cristal</h3>
-            <p>Brilhos e caminhos secretos.</p>
-          </article>
-          <article>
-            <b>04</b><span>🌋</span>
-            <h3>Vulcão Dourado</h3>
-            <p>Perigo em cada curva.</p>
-          </article>
-          <article>
-            <b>05</b><span>🏰</span>
-            <h3>Castelo das Sombras</h3>
-            <p>O guardião final.</p>
-          </article>
-        </div>
-      </section>
-    </main>
-    <footer>
-      <span>© HRCLN DEV · HRCLN-GAMES</span
-      ><span>Uma aventura original em evolução.</span>
-    </footer>
-    <div class="modal hidden" id="modal">
-      <div class="modal-card">
-        <h2 id="modalTitle">Como jogar</h2>
-        <p id="modalText">
-          Use as setas ou WASD para navegar pelo labirinto. Recolha as estrelas.
-          O poder dourado deixa os guardiões vulneráveis por alguns segundos.
-          Complete o labirinto para avançar.
-        </p>
-        <button id="closeModal">Entendi!</button>
-      </div>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/phaser@3.80.1/dist/phaser.min.js"></script>
-    <script src="game.js"></script>
-  </body>
-</html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#081329"><title>As Aventuras de Nena e Pepê | HRCLN-GAMES</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header><a class="brand" href="./"><span class="logo">H</span><span>HRCLN<span class="gold">-GAMES</span><small>JOGUE • EXPLORE • DESCUBRA</small></span></a><span class="pill">JOGO DE LABIRINTO · 5 FASES</span></header>
+<main><section class="intro"><div><p class="eyebrow">UMA AVENTURA ORIGINAL HRCLN DEV</p><h1>As Aventuras de<br><span>Nena &amp; Pepê</span></h1><p>Entre nos labirintos mágicos, recolha todas as estrelas, fuja dos guardiões e desbloqueie cinco mundos fantásticos!</p><div class="buttons"><button id="playBtn">▶ JOGAR AGORA</button><button class="secondary" id="howBtn">Como jogar?</button></div><p class="hint" id="hint">Setas ou WASD para mover · P para pausar · No celular use os controles na tela.</p></div>
+<div class="art"><div class="planet"></div><div class="hill h1"></div><div class="hill h2"></div><div class="char girl"><span>☺</span></div><div class="char boy"><span>☺</span></div><div class="puppy">🐶</div><div class="star st1">★</div><div class="star st2">★</div></div></section>
+<section class="game-area" id="gameArea"><div class="hud"><div>🌟 PONTOS <b id="score">0</b></div><div>❤️ VIDAS <b id="lives">3</b></div><div>🗺️ FASE <b id="level">1/5</b></div><div>✨ RESTAM <b id="remaining">0</b></div><button id="soundBtn">🔊 Som</button></div><div id="game"></div>
+<div class="touch"><button data-dir="left">◀</button><div><button data-dir="up">▲</button><div><button data-dir="down">▼</button></div></div><button data-dir="right">▶</button></div>
+<div class="under"><div><h2 id="levelName">01 · Bosque Encantado</h2><p id="message">Colete todas as estrelas e encontre a saída!</p></div><button id="restartBtn">↻ Reiniciar fase</button></div></section>
+<section class="worlds"><p class="eyebrow">SUA JORNADA</p><h2>Cinco mundos para explorar</h2><div class="world-grid"><article><b>01</b><span>🌳</span><h3>Bosque Encantado</h3><p>Estrelas e trilhas verdes.</p></article><article><b>02</b><span>☁️</span><h3>Vila das Nuvens</h3><p>Labirintos nas alturas.</p></article><article><b>03</b><span>💎</span><h3>Cavernas de Cristal</h3><p>Brilhos e caminhos secretos.</p></article><article><b>04</b><span>🌋</span><h3>Vulcão Dourado</h3><p>Perigo em cada curva.</p></article><article><b>05</b><span>🏰</span><h3>Castelo das Sombras</h3><p>O guardião final.</p></article></div></section></main>
+<footer><span>© HRCLN DEV · HRCLN-GAMES</span><span>Uma aventura original em evolução.</span></footer>
+<div class="modal hidden" id="modal"><div class="modal-card"><h2 id="modalTitle">Como jogar</h2><p id="modalText">Use as setas ou WASD para navegar pelo labirinto. Recolha as estrelas. O poder dourado deixa os guardiões vulneráveis por alguns segundos. Complete o labirinto para avançar.</p><button id="closeModal">Entendi!</button></div></div>
+<script src="https://cdn.jsdelivr.net/npm/phaser@3.80.1/dist/phaser.min.js"></script><script src="game.js"></script></body></html>
